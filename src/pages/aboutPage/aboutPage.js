@@ -2,7 +2,7 @@ import Header from './../../components/header'
 
 const AboutPage = () =>{
     const imgStyling = {
-        width:"30%",
+        width:"40%",
         marginRight:"10px"
     }
     const containerStyling = {
@@ -14,10 +14,16 @@ const AboutPage = () =>{
 
     }
     const infoStyling = {
-        width:"70%",
+        width:"60%",
         display:"flex",
         justifyContent:"center",
         alignItems:"start"
+    }
+    const socialsStyling = {
+        marginTop:"50px"
+    }
+    const textStyling={
+        fontSize:"larger"
     }
     
     return <div>
@@ -27,7 +33,7 @@ const AboutPage = () =>{
                 <img style={imgStyling} src={require('../../images/IMG_4900.jpg')}></img>
                 <div>
                     <h2 style={{marginTop:"0"}}>Ana Cristina Avelar</h2>
-                    <h3>
+                    <p style={textStyling}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
@@ -43,7 +49,17 @@ quibusdam sed amet tempora. Sit laborum ab, eius fugit doloribus tenetur
 fugiat, temporibus enim commodi iusto libero magni deleniti quod quam 
 consequuntur! Commodi minima excepturi repudiandae velit hic maxime
 
-                    </h3>
+                    </p>
+                    <div style={socialsStyling}className="socials">
+                        <a href="whitehouse.gov">
+                        <h3>Instagram</h3>
+                        
+                        </a>
+                        <a href="nasa.gov">
+                        <h3>LinkedIn</h3>
+                        
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
