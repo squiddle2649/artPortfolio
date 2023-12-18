@@ -1,0 +1,24 @@
+body{
+    background-color: #e3cfb6;
+}
+.titleContainer{
+    position: relative;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.galleryContainer{
+    display:flex;
+    justify-content:center;
+}
+.galleryGrid{
+    place-items:center;
+    display:grid;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    height:100%
+}
+.painting{
+    margin: 10px;
+    width:100%;
+}

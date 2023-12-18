@@ -1,0 +1,12 @@
+
+.headerItem,.currentItem{
+    font-size: 2.5vw;
+    margin: 10px;
+    
+}
+.currentItem{
+    text-decoration: underline;
+}
+.headerItem:hover,.currentItem:hover{
+    text-decoration: underline;
+}
