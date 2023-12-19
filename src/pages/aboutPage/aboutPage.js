@@ -1,24 +1,18 @@
 import Header from './../../components/header'
+import './aboutPageStyling.css'
 
 const AboutPage = () =>{
-    const imgStyling = {
-        width:"40%",
-        marginRight:"10px"
-    }
+
     const containerStyling = {
         width:"100%",
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
-        marginTop:"50px"
+        marginTop:"50px",
+
 
     }
-    const infoStyling = {
-        width:"60%",
-        display:"flex",
-        justifyContent:"center",
-        alignItems:"start"
-    }
+
     const socialsStyling = {
         marginTop:"50px"
     }
@@ -26,11 +20,11 @@ const AboutPage = () =>{
         fontSize:"larger"
     }
     
-    return <div>
+    return <div className='entireContainer'> 
         <Header current="about"></Header>
         <div className="infoContainer" style={containerStyling}>
-            <div className="info" style={infoStyling}>
-                <img style={imgStyling} src={require('../../images/IMG_4900.jpg')}></img>
+            <div className="info" >
+                <img className="momImg" src={require('../../images/IMG_4900.jpg')}></img>
                 <div>
                     <h2 style={{marginTop:"0"}}>Ana Cristina Avelar</h2>
                     <p style={textStyling}>
@@ -51,11 +45,11 @@ consequuntur! Commodi minima excepturi repudiandae velit hic maxime
 
                     </p>
                     <div style={socialsStyling}className="socials">
-                        <a href="whitehouse.gov">
+                        <a href="https://www.moma.org/" target="_blank">
                         <h3>Instagram</h3>
                         
                         </a>
-                        <a href="nasa.gov">
+                        <a href="https://www.nasa.gov/" target="_blank">
                         <h3>LinkedIn</h3>
                         
                         </a>

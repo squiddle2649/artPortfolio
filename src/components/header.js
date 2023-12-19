@@ -23,9 +23,6 @@ const Header = (props) => {
         <Link to="/about" style={{textDecoration:"none"}}>
             <h3 style={textStyling} className={props.current==="about" ? "currentItem" : "headerItem"}>About</h3>
         </Link>
-        <Link to="/contact" style={{textDecoration:"none"}}>
-            <h3 style={textStyling} className={props.current==="contact" ? "currentItem" : "headerItem"}>Contact</h3>
-        </Link>
     </div>
 }
 export default Header

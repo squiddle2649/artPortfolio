@@ -1,0 +1,43 @@
+.entireContainer{
+    height: 100vh;
+    background: antiquewhite;
+}
+@media (max-width: 1100px) {
+    .momImg{
+    width:50%;
+    margin-right:10px;
+}
+    .info{
+        width:60%;
+        display:flex;
+        justify-content:center;
+        align-items:start
+    }
+}
+@media (min-width: 1100px) {
+    .momImg{
+    width:40%;
+    margin-right:10px;
+}
+    .info{
+        width:60%;
+        display:flex;
+        justify-content:center;
+        align-items:start
+    }
+}
+
+@media (max-width: 950px) {
+    .momImg{
+    width:80%;
+    margin-right:10px;
+}
+    .info{
+        width:60%;
+        display:flex;
+        justify-content:center;
+        align-items:start;
+        flex-direction: column;
+    }
+}
+

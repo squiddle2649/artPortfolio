@@ -12,9 +12,41 @@ body{
     display:flex;
     justify-content:center;
 }
-.galleryGrid{
-    place-items:center;
-    display:grid;
-    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
-    height:100%
+@media (max-width: 1240px) {
+
+    .galleryGrid{
+        place-items:center;
+        display:grid;
+        grid-template-columns: 0.333333fr 0.333333fr 0.333333fr;
+        height: 100%;
+    } 
+}
+@media (min-width: 1240px) {
+
+    .galleryGrid{
+        place-items:center;
+        display:grid;
+        grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+        height: 100%;
+    } 
+}
+@media (max-width: 930px) {
+    
+    .galleryGrid{
+        place-items:center;
+        display:grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        height: 100%;
+    } 
+    
+}
+@media (max-width: 500px) {
+    
+    .galleryGrid{
+        place-items:center;
+        display:grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+    } 
+    
 }
