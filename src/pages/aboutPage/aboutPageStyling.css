@@ -1,7 +1,4 @@
-.entireContainer{
-    height: 100vh;
-    background: antiquewhite;
-}
+
 @media (max-width: 1100px) {
     .momImg{
     width:50%;

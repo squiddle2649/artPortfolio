@@ -19,7 +19,7 @@ const AboutPage = () =>{
     const textStyling={
         fontSize:"larger"
     }
-    
+    document.body.style.backgroundColor="antiquewhite"
     return <div className='entireContainer'> 
         <Header current="about"></Header>
         <div className="infoContainer" style={containerStyling}>

@@ -1,7 +1,8 @@
 import Header from './../../components/header'
 import Gallery from './gallery'
-
+import './galleryStyling.css'
 const MainPage = () =>{
+    document.body.style.backgroundColor="#e3cfb6"
     return <div>
         
         <TitleContainer></TitleContainer>
@@ -9,6 +10,7 @@ const MainPage = () =>{
     </div>
 
 }
+
 const TitleContainer = () =>{
     return <div className='titleContainer'>
     <img className="painting" style={{
@@ -16,21 +18,8 @@ const TitleContainer = () =>{
         margin:"0"
     }} src={require('../../images/IMG_8313.jpg')}>
     </img>
-    <h1 style={{
-        position:"absolute",
-        top:"2%",
-        color:"#f2ed84",
-        fontSize:"8vw"
-        
-    }}
-    className='heading'>Ana Cristina Avelar</h1>
-    <h2 style={{
-        position:"absolute",
-        top:"19%",
-        color:"#f2ed84",
-        fontSize:"3vw",
-}}
-        className='heading'>Engineer turned artist</h2>
+    <h1 className='heading'>Ana Cristina Avelar</h1>
+    <h2 className='description'>Engineer turned artist</h2>
         <Header current="work"></Header>
     </div>
 }
