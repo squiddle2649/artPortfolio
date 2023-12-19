@@ -1,4 +1,4 @@
-import { findByLabelText } from "@testing-library/react"
+
 import { Link } from 'react-router-dom';
 import './headerStyling.css'
 const Header = (props) => {
@@ -17,10 +17,10 @@ const Header = (props) => {
     }
 
     return <div className = "headerContainer" style={containerStyling}>
-        <Link to="/" style={{textDecoration:"none"}}>
+        <Link to="/artPortfolio" style={{textDecoration:"none"}}>
             <h3 style={textStyling} className={props.current==="work" ? "currentItem" : "headerItem"}>Work</h3>
         </Link>
-        <Link to="/about" style={{textDecoration:"none"}}>
+        <Link to="/artPortfolio/about" style={{textDecoration:"none"}}>
             <h3 style={textStyling} className={props.current==="about" ? "currentItem" : "headerItem"}>About</h3>
         </Link>
     </div>
